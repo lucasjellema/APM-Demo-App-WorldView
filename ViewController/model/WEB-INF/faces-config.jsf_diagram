@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SDM>
+   <OverallProperties
+      id="OverallProperties1"/>
+   <Page
+      id="Page2">
+      <property
+         name="wildcard">false</property>
+      <property
+         name="y">208.14941</property>
+      <property
+         name="x">153.5</property>
+      <property
+         name="jspName">/main.jsf</property>
+   </Page>
+   <Page
+      id="Page3">
+      <property
+         name="wildcard">false</property>
+      <property
+         name="y">269.1494</property>
+      <property
+         name="x">499.88184</property>
+      <property
+         name="jspName">/WorldMap.jsf</property>
+   </Page>
+   <NavigationCase
+      islink="true"
+      id="NavigationCase4"
+      from="Page2"
+      to="Page3">
+      <property
+         name="fromOutcome">map</property>
+      <property
+         name="description">Navigation Case</property>
+      <property
+         name="sdm:polyPoints">R50,194.5,207.79883,458.88184,268.79883,L50</property>
+   </NavigationCase>
+   <Page
+      id="Page5">
+      <property
+         name="wildcard">false</property>
+      <property
+         name="y">146.14941</property>
+      <property
+         name="x">608.2129</property>
+      <property
+         name="jspName">/WorldNews.jsf</property>
+   </Page>
+   <NavigationCase
+      islink="true"
+      id="NavigationCase6"
+      from="Page2"
+      to="Page5">
+      <property
+         name="fromOutcome">news</property>
+      <property
+         name="description">Navigation Case</property>
+      <property
+         name="sdm:polyPoints">R46,194.5,204.29883,567.2129,145.79883,L50</property>
+   </NavigationCase>
+</SDM>
