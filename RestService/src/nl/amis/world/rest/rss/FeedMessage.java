@@ -1,8 +1,15 @@
-package nl.amis.world.view.rss;
+package nl.amis.world.rest.rss;
 
+import javax.xml.bind.annotation.XmlRootElement;
+
+
+@XmlRootElement 
 public class FeedMessage {
 
 
+    public FeedMessage() {
+        
+    }
     String title;
             String description;
             String link;

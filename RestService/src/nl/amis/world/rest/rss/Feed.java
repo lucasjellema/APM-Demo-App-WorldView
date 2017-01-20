@@ -1,18 +1,57 @@
-package nl.amis.world.view.rss;
+package nl.amis.world.rest.rss;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement 
 public class Feed {
 
-    final String title;
-    final String link;
-    final String description;
-    final String language;
-    final String copyright;
-    final String pubDate;
+    String title;
+    String link;
+    String description;
+    String language;
 
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public void setLink(String link) {
+        this.link = link;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public void setLanguage(String language) {
+        this.language = language;
+    }
+
+    public void setCopyright(String copyright) {
+        this.copyright = copyright;
+    }
+
+    public void setPubDate(String pubDate) {
+        this.pubDate = pubDate;
+    }
+    String copyright;
+    String pubDate;
+
+    @XmlElement 
     final List<FeedMessage> entries = new ArrayList<FeedMessage>();
+
+    public Feed() {
+        this.title = "default title";
+        this.link = "default link";
+        this.description = "description";
+        this.language = "language";
+        this.copyright = "copyright";
+        this.pubDate = "pubDate";
+    }
+
 
     public Feed(String title, String link, String description, String language, String copyright, String pubDate) {
         this.title = title;

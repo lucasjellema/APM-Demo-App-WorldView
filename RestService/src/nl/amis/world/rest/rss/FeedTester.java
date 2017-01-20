@@ -1,9 +1,10 @@
-package nl.amis.world.view.rss;
+package nl.amis.world.rest.rss;
+
 
 public class FeedTester {
     public static void main(String[] args) {
-        RSSFeedParser parser = new RSSFeedParser("http://rss.cnn.com/rss/cnn_topstories.rss");
-        Feed feed = parser.readFeed();
+        RSSFeedParser parser = new RSSFeedParser("http://feeds.reuters.com/Reuters/worldNews");
+        Feed feed = parser.readFeed("bbc");
         System.out.println(feed);
         for (FeedMessage message : feed.getMessages()) {
             System.out.println(message);

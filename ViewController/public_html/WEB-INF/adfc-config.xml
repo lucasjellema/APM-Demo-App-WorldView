@@ -12,15 +12,15 @@
     <managed-bean-class>nl.amis.world.view.beans.MainBean</managed-bean-class>
     <managed-bean-scope>view</managed-bean-scope>
   </managed-bean>
-  <!-- SuppressWarning: oracle.ide.xml.validation-error -->
-  <managed-bean id="__2">
-    <managed-bean-name>newsBean</managed-bean-name>
-    <managed-bean-class>nl.amis.world.view.beans.NewsBean</managed-bean-class>
-    <managed-bean-scope>request</managed-bean-scope>
-    <managed-property id="__4">
-      <property-name>rssFeedUrl</property-name>
+ 
+  <managed-bean id="__24">
+    <managed-bean-name>newsRssBean</managed-bean-name>
+    <managed-bean-class>nl.amis.world.view.beans.NewsRssBean</managed-bean-class>
+    <managed-bean-scope>view</managed-bean-scope>
+    <managed-property id="__44">
+      <property-name>rssFeedIdentifier</property-name>
       <property-class>java.lang.String</property-class>
-      <value>http://rss.cnn.com/rss/cnn_topstories.rss</value>
+      <value>reuters</value>
     </managed-property>
   </managed-bean>
 </adfc-config>

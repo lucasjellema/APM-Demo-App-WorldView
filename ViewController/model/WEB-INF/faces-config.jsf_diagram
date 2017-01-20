@@ -59,4 +59,28 @@
       <property
          name="sdm:polyPoints">R46,194.5,204.29883,567.2129,145.79883,L50</property>
    </NavigationCase>
+   <NavigationCase
+      islink="true"
+      id="NavigationCase7"
+      from="Page5"
+      to="Page2">
+      <property
+         name="fromOutcome">main</property>
+      <property
+         name="description">Navigation Case</property>
+      <property
+         name="sdm:polyPoints">L54,567.2129,149.29883,195.046,207.79883,R50</property>
+   </NavigationCase>
+   <NavigationCase
+      islink="true"
+      id="NavigationCase8"
+      from="Page3"
+      to="Page2">
+      <property
+         name="fromOutcome">main</property>
+      <property
+         name="description">Navigation Case</property>
+      <property
+         name="sdm:polyPoints">L54,458.17334,272.29883,194.5,218.29883,R62</property>
+   </NavigationCase>
 </SDM>

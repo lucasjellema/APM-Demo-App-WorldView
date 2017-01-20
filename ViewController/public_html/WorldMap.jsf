@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE html>
 <f:view xmlns:f="http://java.sun.com/jsf/core" xmlns:af="http://xmlns.oracle.com/adf/faces/rich"
-        xmlns:dvt="http://xmlns.oracle.com/dss/adf/faces">
+        xmlns:dvt="http://xmlns.oracle.com/dss/adf/faces" xmlns:h="http://java.sun.com/jsf/html">
     <af:document title="WorldMap.jsf" id="d1">
   <af:form id="f1">
             <af:panelGridLayout id="pgl1">
@@ -15,6 +15,8 @@
                             <f:facet name="legend"/>
                             <f:facet name="info"/>
                             <af:outputFormatted id="otf" value="Presented to our special guest #{mainBean.welcome}" />
+                            <af:button text="Main"  id="b1" action="main"/>
+                            <h:commandButton value="Main" id="cb1" action="main" title="Go to main page"/>
                         </af:panelHeader>
                     </af:gridCell>
                 </af:gridRow>

@@ -14,4 +14,18 @@
       <to-view-id>/WorldNews.jsf</to-view-id>
     </navigation-case>
   </navigation-rule>
+  <navigation-rule>
+    <from-view-id>/WorldNews.jsf</from-view-id>
+    <navigation-case>
+      <from-outcome>main</from-outcome>
+      <to-view-id>/main.jsf</to-view-id>
+    </navigation-case>
+  </navigation-rule>
+  <navigation-rule>
+    <from-view-id>/WorldMap.jsf</from-view-id>
+    <navigation-case>
+      <from-outcome>main</from-outcome>
+      <to-view-id>/main.jsf</to-view-id>
+    </navigation-case>
+  </navigation-rule>
 </faces-config>
