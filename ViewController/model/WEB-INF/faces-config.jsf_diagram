@@ -83,4 +83,39 @@
       <property
          name="sdm:polyPoints">L54,458.17334,272.29883,194.5,218.29883,R62</property>
    </NavigationCase>
+   <Page
+      id="Page9">
+      <property
+         name="wildcard">false</property>
+      <property
+         name="y">381.1494</property>
+      <property
+         name="x">284.90137</property>
+      <property
+         name="jspName">/CountriesCatalog.jsf</property>
+   </Page>
+   <NavigationCase
+      islink="true"
+      id="NavigationCase10"
+      from="Page9"
+      to="Page2">
+      <property
+         name="fromOutcome">main</property>
+      <property
+         name="description">Navigation Case</property>
+      <property
+         name="sdm:polyPoints">T50,284.90137,326.79883,153.5,261.79883,B50</property>
+   </NavigationCase>
+   <NavigationCase
+      islink="true"
+      id="NavigationCase11"
+      from="Page2"
+      to="Page9">
+      <property
+         name="fromOutcome">catalog</property>
+      <property
+         name="description">Navigation Case</property>
+      <property
+         name="sdm:polyPoints">B56,157.0,261.79883,288.40137,322.38605,T56</property>
+   </NavigationCase>
 </SDM>

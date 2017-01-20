@@ -1,0 +1,80 @@
+<References xmlns="http://xmlns.oracle.com/adf/jndi">
+  <Reference name="world" className="oracle.jdeveloper.db.adapter.DatabaseProvider"
+             credentialStoreKey="AMISPAAS_DB_WORLD" xmlns="">
+    <Factory className="oracle.jdevimpl.db.adapter.DatabaseProviderFactory1212"/>
+    <RefAddresses>
+      <StringRefAddr addrType="subtype">
+        <Contents>oraJDBC</Contents>
+      </StringRefAddr>
+      <StringRefAddr addrType="user">
+        <Contents>world</Contents>
+      </StringRefAddr>
+      <StringRefAddr addrType="hostname">
+        <Contents>141.144.34.158</Contents>
+      </StringRefAddr>
+      <StringRefAddr addrType="port">
+        <Contents>1521</Contents>
+      </StringRefAddr>
+      <SecureRefAddr addrType="password"/>
+      <StringRefAddr addrType="serviceName">
+        <Contents>PDB1.amispaas.oraclecloud.internal</Contents>
+      </StringRefAddr>
+      <StringRefAddr addrType="oraDriverType">
+        <Contents>thin</Contents>
+      </StringRefAddr>
+    </RefAddresses>
+  </Reference>
+  <Reference name="AMISPAAS_DB_SYS" className="oracle.jdeveloper.db.adapter.DatabaseProvider"
+             credentialStoreKey="AMISPAAS_DB_SYS" xmlns="">
+    <Factory className="oracle.jdevimpl.db.adapter.DatabaseProviderFactory1212"/>
+    <RefAddresses>
+      <StringRefAddr addrType="subtype">
+        <Contents>oraJDBC</Contents>
+      </StringRefAddr>
+      <StringRefAddr addrType="user">
+        <Contents>sys</Contents>
+      </StringRefAddr>
+      <StringRefAddr addrType="hostname">
+        <Contents>141.144.34.158</Contents>
+      </StringRefAddr>
+      <StringRefAddr addrType="port">
+        <Contents>1521</Contents>
+      </StringRefAddr>
+      <SecureRefAddr addrType="password"/>
+      <StringRefAddr addrType="serviceName">
+        <Contents>PDB1.amispaas.oraclecloud.internal</Contents>
+      </StringRefAddr>
+      <StringRefAddr addrType="oraDriverType">
+        <Contents>thin</Contents>
+      </StringRefAddr>
+      <StringRefAddr addrType="role">
+        <Contents>SYSDBA</Contents>
+      </StringRefAddr>
+    </RefAddresses>
+  </Reference>
+  <Reference name="AMISPAAS_DB_WORLD" className="oracle.jdeveloper.db.adapter.DatabaseProvider"
+             credentialStoreKey="AMISPAAS_DB_WORLD" xmlns="">
+    <Factory className="oracle.jdevimpl.db.adapter.DatabaseProviderFactory1212"/>
+    <RefAddresses>
+      <StringRefAddr addrType="subtype">
+        <Contents>oraJDBC</Contents>
+      </StringRefAddr>
+      <StringRefAddr addrType="user">
+        <Contents>world</Contents>
+      </StringRefAddr>
+      <StringRefAddr addrType="hostname">
+        <Contents>141.144.34.158</Contents>
+      </StringRefAddr>
+      <StringRefAddr addrType="port">
+        <Contents>1521</Contents>
+      </StringRefAddr>
+      <SecureRefAddr addrType="password"/>
+      <StringRefAddr addrType="serviceName">
+        <Contents>PDB1.amispaas.oraclecloud.internal</Contents>
+      </StringRefAddr>
+      <StringRefAddr addrType="oraDriverType">
+        <Contents>thin</Contents>
+      </StringRefAddr>
+    </RefAddresses>
+  </Reference>
+</References>
