@@ -12,7 +12,11 @@
   BindingStyle="OracleName"
   CustomQuery="false"
   SelectAllAttributes="false"
-  PageIterMode="Full">
+  PageIterMode="Full"
+  ComponentClass="nl.amis.world.model.CountriesViewImpl">
+  <DesignTime>
+    <Attr Name="_codeGenFlag2" Value="Coll|VarAccess"/>
+  </DesignTime>
   <EntityUsage
     Name="Country"
     Entity="nl.amis.world.model.Country"/>
@@ -100,4 +104,9 @@
     EntityAttrName="Url"
     EntityUsage="Country"
     AliasName="URL"/>
+  <SortCriteria>
+    <Sort
+      Attribute="Population"
+      Ascending="false"/>
+  </SortCriteria>
 </ViewObject>

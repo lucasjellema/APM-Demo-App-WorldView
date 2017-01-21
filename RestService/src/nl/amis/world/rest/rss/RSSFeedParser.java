@@ -68,7 +68,7 @@ public class RSSFeedParser {
     @Path("feed/{feedId}")
     @Produces({ MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON })
     public Feed getFeed(@PathParam("feedId") String feedIdentifier) {
-        _logger.info("getFeed - feed identifier = {0}", feedIdentifier);
+        _logger.info("REST Service /world-rss/feed/{0} - returning JSON representation of RSS news feed", feedIdentifier);
 
         return readFeed(feedIdentifier);
     }

@@ -4,7 +4,7 @@
   <parameters/>
   <executables>
     <variableIterator id="variables"/>
-    <iterator Binds="CountriesView1" RangeSize="25" DataControl="WorldModuleDataControl" id="CountriesView1Iterator"/>
+    <iterator Binds="CountriesView1" RangeSize="15" DataControl="WorldModuleDataControl" id="CountriesView1Iterator"/>
     <searchRegion Binds="CountriesView1Iterator" Criteria=""
                   Customizer="oracle.jbo.uicli.binding.JUSearchBindingCustomizer" id="CountriesView1Query"/>
   </executables>

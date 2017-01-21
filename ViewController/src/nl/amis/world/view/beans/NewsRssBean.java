@@ -9,8 +9,11 @@ import generated.Feed;
 import generated.FeedMessage;
 
 
+import java.util.ResourceBundle;
+
 import javax.faces.event.ValueChangeEvent;
 
+import nl.amis.world.view.beans.helper.RssInvoker;
 import nl.amis.world.view.rssclient.TheWorldAtRestServiceResources;
 
 import oracle.adf.share.logging.ADFLogger;
@@ -62,6 +65,10 @@ public class NewsRssBean {
     
     private void prepareRssItems() {
         _logger.info("fetch rss feed from REST service {0}", getRssFeedIdentifier());
+        // this is a meaningless call
+        new RssInvoker().getRss(getRssFeedIdentifier());
+        
+        // and now for the real call - leveraging the generated JAX-RS client for the REST service that provides the JSON representation of the RSS feed
         Client client = TheWorldAtRestServiceResources.createClient();
 
         TheWorldAtRestServiceResources.WorldRss theworldatrestserviceresourcesworldRss =
@@ -71,7 +78,6 @@ public class NewsRssBean {
         _logger.fine("retrieved rss feed for channel {0}", rssFeed.getTitle());
         rssItems = new ArrayList<FeedMessage>();
         rssItems = rssFeed.getEntries();
-
     }
 
     public NewsRssBean() {

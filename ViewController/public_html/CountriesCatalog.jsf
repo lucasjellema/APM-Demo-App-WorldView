@@ -40,21 +40,10 @@
                                       selectionListener="#{bindings.CountriesView1.collectionModel.makeCurrent}"
                                       rowSelection="single" fetchSize="#{bindings.CountriesView1.rangeSize}"
                                       filterModel="#{bindings.CountriesView1Query.queryDescriptor}"
+                                      contentDelivery="immediate"
                                       queryListener="#{bindings.CountriesView1Query.processQuery}" filterVisible="true"
                                       varStatus="vs" id="t1" columnStretching="last">
-                                <af:column sortProperty="#{bindings.CountriesView1.hints.RichValue.name}"
-                                           filterable="true" sortable="true"
-                                           headerText="#{bindings.CountriesView1.hints.RichValue.label}" id="c1">
-                                    <af:inputText value="#{row.bindings.RichValue.inputValue}"
-                                                  label="#{bindings.CountriesView1.hints.RichValue.label}"
-                                                  required="#{bindings.CountriesView1.hints.RichValue.mandatory}"
-                                                  columns="#{bindings.CountriesView1.hints.RichValue.displayWidth}"
-                                                  maximumLength="#{bindings.CountriesView1.hints.RichValue.precision}"
-                                                  shortDesc="#{bindings.CountriesView1.hints.RichValue.tooltip}"
-                                                  id="it1">
-                                        <f:validator binding="#{row.bindings.RichValue.validator}"/>
-                                    </af:inputText>
-                                </af:column>
+                               
                                 <af:column sortProperty="#{bindings.CountriesView1.hints.Name.name}" filterable="true"
                                            sortable="true" headerText="#{bindings.CountriesView1.hints.Name.label}"
                                            id="c2">
