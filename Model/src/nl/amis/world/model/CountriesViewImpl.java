@@ -10,8 +10,8 @@ import oracle.jbo.server.ViewObjectImpl;
 // ---    Warning: Do not modify method signatures of generated methods.
 // ---------------------------------------------------------------------
 public class CountriesViewImpl extends ViewObjectImpl {
-    private static ADFLogger _logger = 
-                ADFLogger.createADFLogger(CountriesViewImpl.class); 
+    private static ADFLogger _logger = ADFLogger.createADFLogger(CountriesViewImpl.class);
+
     /**
      * This is the default constructor (do not remove).
      */
@@ -33,11 +33,20 @@ public class CountriesViewImpl extends ViewObjectImpl {
     }
 
     @Override
-    protected void executeQueryForCollection(Object object, Object[] object2, int i) {
+    protected void executeQueryForCollection(Object object, Object[] params, int i) {
         _logger.fine("Execute Query For Collection in CountriesView");
-// TODO Implement this method
-        super.executeQueryForCollection(object, object2, i);
-        
+        if (params != null) {
+            for (Object param : params) {
+                Object[] nameValue = (Object[]) param;
+                String name = (String) nameValue[0];
+                _logger.finest("Param for CountriesView {0}", param + name + "=" + nameValue[1]);
+                if ("X".equalsIgnoreCase((String)nameValue[1])) {
+                    throw new RuntimeException("That is a parameter value ('X') we cannot handle - Sorry ");
+                }
+            }
+        }
+        super.executeQueryForCollection(object, params, i);
+
     }
 }
 

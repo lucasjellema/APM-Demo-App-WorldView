@@ -15,6 +15,8 @@
                             <f:facet name="legend"/>
                             <f:facet name="info"/>
                             <af:outputFormatted id="otf" value="#{mainBean.welcome}" />
+                            <af:image source="images/3dchess_javafx.png" id="i1"/>
+                            <af:image source="images/imaginary-image.png" id="i2"/>
                         </af:panelHeader>
                     </af:gridCell>
                 </af:gridRow>
@@ -29,6 +31,7 @@
                                     <af:button text="Map" id="b1" action="map" partialSubmit="false"/>
                                     <af:button text="News" id="b2" action="news" partialSubmit="false"/>
                                     <af:button text="Countries Catalog" id="b3" action="catalog" partialSubmit="false"/>
+                                    <af:link text="Worldly Talk" id="l1" destination="/worldlytalk"/>
                                 </af:panelHeader>
                             </f:facet>
                             <f:facet name="top"/>

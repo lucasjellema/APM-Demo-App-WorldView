@@ -11,10 +11,16 @@
                                         partialTriggers="sor1">
                             <f:facet name="context"/>
                             <f:facet name="menuBar"/>
-                            <f:facet name="toolbar"/>
+                            <f:facet name="toolbar">
+                                <h:panelGroup id="pg1">
+                                    <h:commandButton value="Back to Main Page" id="cb1" action="main"
+                                                     title="Go to main page"/>
+                                    <af:button text="Do not press this button" id="b1"
+                                               actionListener="#{newsRssBean.donotpressbuttonActionListener}"/>
+                                </h:panelGroup>
+                            </f:facet>
                             <f:facet name="legend"/>
                             <f:facet name="info"/>
-                            <h:commandButton value="Back to Main Page" id="cb1" action="main" title="Go to main page"/>
 
                         </af:panelHeader>
                     </af:gridCell>
@@ -24,7 +30,7 @@
                         <!-- Content -->
                         <af:selectOneRadio label="Select news channel" value="#{newsRssBean.rssFeedIdentifier}"
                                            valueChangeListener="#{newsRssBean.changeNewsChannel}" id="sor1"
-                                           autoSubmit="true">
+                                           autoSubmit="true" layout="horizontal">
                             <af:selectItem label="CNN" value="cnn" id="si1"/>
                             <af:selectItem label="BBC" value="bbc" id="si2"/>
                             <af:selectItem label="NOS (Dutch)" value="nos" id="si3"/>

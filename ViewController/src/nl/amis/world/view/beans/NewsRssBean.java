@@ -11,6 +11,7 @@ import generated.FeedMessage;
 
 import java.util.ResourceBundle;
 
+import javax.faces.event.ActionEvent;
 import javax.faces.event.ValueChangeEvent;
 
 import nl.amis.world.view.beans.helper.RssInvoker;
@@ -89,5 +90,11 @@ public class NewsRssBean {
         setRssFeedIdentifier((String) valueChangeEvent.getNewValue());
         _logger.info("News channel was switched to {0}", this.getRssFeedIdentifier() );
         prepareRssItems();
+    }
+
+    public void donotpressbuttonActionListener(ActionEvent actionEvent) {
+        // Add event code here...
+        _logger.warning("This button should not have been pressed.");
+        throw new RuntimeException("The unpressable button was pressed");
     }
 }
