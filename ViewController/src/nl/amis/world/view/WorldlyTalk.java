@@ -3,6 +3,8 @@ package nl.amis.world.view;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+import java.util.Random;
+
 import javax.servlet.*;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
@@ -22,6 +24,17 @@ public class WorldlyTalk extends HttpServlet {
         out.println("<head><title>WorldlyTalk</title></head>");
         out.println("<body>");
         out.println("<p>So much to see and do. Get around, meet people, enjoy life</p>");
+        Random rand = new Random();
+        // n in 1..5
+        int  n = rand.nextInt(5) + 1;
+        if (n==1) {
+            request.getServletContext().log("Too bad - 20% chance of choking and this is it. Sleeping for 3 seconds.");
+            try {
+                Thread.sleep(3000);
+                out.println("<p>Oops, sorry about that little delay</p>");
+            } catch (InterruptedException e) {
+            }
+        }
         out.println("<a href=\"moreworldlytalk\">More Worldly Talk (can be dangerous)</a>");
         out.println("<a href=\"nonexistingservletmoreworldlytalk\">Ephemeral Thoughts (can be hard to get hold of)</a>");
         out.println("<a href=\"superindex.html\">The Application's Main Index</a>");
