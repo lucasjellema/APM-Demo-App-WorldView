@@ -35,6 +35,10 @@ public class WorldlyTalk extends HttpServlet {
             } catch (InterruptedException e) {
             }
         }
+        if (n==5) {
+            request.getServletContext().log("Too bad - 20% chance of misfiring. And you hit it!");
+            throw new RuntimeException("Random Exception from Jittery Servlet");
+        }
         out.println("<a href=\"moreworldlytalk\">More Worldly Talk (can be dangerous)</a>");
         out.println("<a href=\"nonexistingservletmoreworldlytalk\">Ephemeral Thoughts (can be hard to get hold of)</a>");
         out.println("<a href=\"superindex.html\">The Application's Main Index</a>");
