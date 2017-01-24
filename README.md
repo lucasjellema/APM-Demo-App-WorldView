@@ -24,5 +24,6 @@ Special problems in the application:
   - when X is entered as filter value in any of the column headings, an exception is thrown in the ADF BC ViewObjectImpl class
   - each country record returned from the database for a country in Asia is slowed down by 200 ms in PL/SQL function derive_rich_placeholder that is called from view countries_vw on which the Entity Object is based; filter for example on Europe or Africa and the query is quite fast. Include Asian records, and the response time increases.
  * index.html has two  dead image reference (https://xx.yy/non-existing-image.jpg and images/non-existing-image.jpg) and a dead link (imaginarysuperindex.html)
+ * News of the World page has "do not press this button' button that will throw and exception
 
 Note: the application produces quite a bit of logging – from the managed beans, the ADF BC components, the Servlets and the JAX-RS classes. Most issues perceived by the end user and found in APM can be related to logfile entries that Log Analytics makes available.
