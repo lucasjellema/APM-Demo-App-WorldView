@@ -22,7 +22,13 @@ public class WorldlyTalk extends HttpServlet {
         PrintWriter out = response.getWriter();
         out.println("<html>");
         out.println("<head><title>WorldlyTalk</title></head>");
-        out.println("<body>");
+            out.println("<body>");
+            out.println("<script>"+
+        "window.apmeum || (apmeum = {});"+
+        "apmeum.customerId='nlamistrial73269';"+
+        "apmeum.baseCollectorUrl='https://nlamistrial73269.itom2.management.us2.oraclecloud.com/APMaaSCollector/external/collector?';"+
+        "</script>"+
+        "<script async src='https://nlamistrial73269.itom2.management.us2.oraclecloud.com/APMaaSCollector/external/collector/staticlib/apmeum.js'></script> ");
         out.println("<p>So much to see and do. Get around, meet people, enjoy life</p>");
         Random rand = new Random();
         // n in 1..5

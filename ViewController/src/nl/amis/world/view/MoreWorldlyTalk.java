@@ -21,12 +21,17 @@ public class MoreWorldlyTalk extends HttpServlet {
         out.println("<html>");
         out.println("<head><title>MoreWorldlyTalk</title></head>");
         out.println("<body>");
-        int value = 0/0;
-        out.println("<p>The servlet has received a GET. This is the reply.</p>"+value+".</p>");
-        if (1>0){
-          request.getServletContext().log("Logging from Servlet MoreWorldlyTalk. About to throw an exception. Quite naughty.");
+        out.println("<script>" + "window.apmeum || (apmeum = {});" + "apmeum.customerId='nlamistrial73269';" +
+                    "apmeum.baseCollectorUrl='https://nlamistrial73269.itom2.management.us2.oraclecloud.com/APMaaSCollector/external/collector?';" +
+                    "</script>" +
+                    "<script async src='https://nlamistrial73269.itom2.management.us2.oraclecloud.com/APMaaSCollector/external/collector/staticlib/apmeum.js'></script> ");
 
-          throw new ServletException("This Servlet Throws an Exception.");
+        int value = 0 / 0;
+        out.println("<p>The servlet has received a GET. This is the reply.</p>" + value + ".</p>");
+        if (1 > 0) {
+            request.getServletContext().log("Logging from Servlet MoreWorldlyTalk. About to throw an exception. Quite naughty.");
+
+            throw new ServletException("This Servlet Throws an Exception.");
         }
         out.println("</body></html>");
         out.close();
