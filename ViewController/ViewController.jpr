@@ -194,6 +194,15 @@
          </list>
       </hash>
    </hash>
+   <hash n="oracle.jdeveloper.runner.RunConfigurations">
+      <hash n="runConfigurationDefinitions">
+         <hash n="Default">
+            <value n="custom" v="false"/>
+            <value n="name" v="Default"/>
+            <url n="targetURL" path="public_html/index.html"/>
+         </hash>
+      </hash>
+   </hash>
    <hash n="oracle.jdevimpl.config.JProjectLibraries">
       <list n="exportedReferences">
          <hash>
@@ -289,6 +298,10 @@
             <value n="isJDK" v="false"/>
          </hash>
          <hash>
+            <value n="id" v="Servlet Runtime"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
             <value n="id" v="Oracle XML Parser v2"/>
             <value n="isJDK" v="false"/>
          </hash>
@@ -314,10 +327,6 @@
          </hash>
          <hash>
             <value n="id" v="BC4J Oracle Domains"/>
-            <value n="isJDK" v="false"/>
-         </hash>
-         <hash>
-            <value n="id" v="Servlet Runtime"/>
             <value n="isJDK" v="false"/>
          </hash>
       </list>
@@ -415,6 +424,10 @@
             <value n="isJDK" v="false"/>
          </hash>
          <hash>
+            <value n="id" v="Servlet Runtime"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
             <value n="id" v="Oracle XML Parser v2"/>
             <value n="isJDK" v="false"/>
          </hash>
@@ -440,10 +453,6 @@
          </hash>
          <hash>
             <value n="id" v="BC4J Oracle Domains"/>
-            <value n="isJDK" v="false"/>
-         </hash>
-         <hash>
-            <value n="id" v="Servlet Runtime"/>
             <value n="isJDK" v="false"/>
          </hash>
       </list>

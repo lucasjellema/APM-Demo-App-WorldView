@@ -25,5 +25,8 @@
         </AttrNames>
       </nodeDefinition>
     </tree>
+    <action id="Rollback" RequiresUpdateModel="false" Action="rollbackTransaction"
+            DataControl="WorldModuleDataControl"/>
+    <action id="Commit" RequiresUpdateModel="true" Action="commitTransaction" DataControl="WorldModuleDataControl"/>
   </bindings>
 </pageDefinition>

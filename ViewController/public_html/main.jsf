@@ -31,6 +31,7 @@
                                     <af:button text="Map" id="b1" action="map" partialSubmit="false"/>
                                     <af:button text="News" id="b2" action="news" partialSubmit="false"/>
                                     <af:button text="Countries Catalog" id="b3" action="catalog" partialSubmit="false"/>
+                                    <af:button text="Errors" id="b4" action="errors" partialSubmit="false"/>
                                     <af:link text="Worldly Talk" id="l1" destination="/worldlytalk"/>
                                 </af:panelHeader>
                             </f:facet>

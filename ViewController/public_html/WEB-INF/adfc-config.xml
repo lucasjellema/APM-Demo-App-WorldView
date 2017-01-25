@@ -12,7 +12,13 @@
     <managed-bean-class>nl.amis.world.view.beans.MainBean</managed-bean-class>
     <managed-bean-scope>view</managed-bean-scope>
   </managed-bean>
- 
+  
+  <managed-bean id="__7">
+    <managed-bean-name>errorGeneratorBean</managed-bean-name>
+    <managed-bean-class>nl.amis.world.view.beans.ErrorGeneratorBean</managed-bean-class>
+    <managed-bean-scope>session</managed-bean-scope>
+  </managed-bean>
+   
   <managed-bean id="__24">
     <managed-bean-name>newsRssBean</managed-bean-name>
     <managed-bean-class>nl.amis.world.view.beans.NewsRssBean</managed-bean-class>

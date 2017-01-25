@@ -116,6 +116,41 @@
       <property
          name="description">Navigation Case</property>
       <property
-         name="sdm:polyPoints">B56,157.0,261.79883,288.40137,322.38605,T56</property>
+         name="sdm:polyPoints">B67,164.0,261.79883,288.40137,322.49292,T56</property>
+   </NavigationCase>
+   <Page
+      id="Page13">
+      <property
+         name="wildcard">false</property>
+      <property
+         name="y">422.1494</property>
+      <property
+         name="x">157.87695</property>
+      <property
+         name="jspName">/WorldOfErrors.jsf</property>
+   </Page>
+   <NavigationCase
+      islink="true"
+      id="NavigationCase14"
+      from="Page2"
+      to="Page13">
+      <property
+         name="fromOutcome">errors</property>
+      <property
+         name="description">Navigation Case</property>
+      <property
+         name="sdm:polyPoints">B33,143.0,268.72134,154.37695,367.79883,T44</property>
+   </NavigationCase>
+   <NavigationCase
+      islink="true"
+      id="NavigationCase15"
+      from="Page13"
+      to="Page2">
+      <property
+         name="fromOutcome">main</property>
+      <property
+         name="description">Navigation Case</property>
+      <property
+         name="sdm:polyPoints">T56,161.37695,367.399,150.0,268.34674,B44</property>
    </NavigationCase>
 </SDM>
