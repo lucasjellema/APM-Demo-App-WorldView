@@ -39,7 +39,7 @@ public class CountriesViewImpl extends ViewObjectImpl {
             for (Object param : params) {
                 Object[] nameValue = (Object[]) param;
                 String name = (String) nameValue[0];
-                _logger.finest("Param for CountriesView {0}", param + name + "=" + nameValue[1]);
+                _logger.fine("Param for CountriesView {0}", param + name + "=" + nameValue[1]);
                 if ("X".equalsIgnoreCase((String)nameValue[1])) {
                     throw new RuntimeException("That is a parameter value ('X') we cannot handle - Sorry ");
                 }

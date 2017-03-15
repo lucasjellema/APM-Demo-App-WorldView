@@ -162,8 +162,8 @@
       </list>
    </hash>
    <hash n="oracle.jdeveloper.model.J2eeSettings">
-      <value n="j2eeWebAppName" v="TheWorld-RestService"/>
-      <value n="j2eeWebContextRoot" v="TheWorldAtRestService"/>
+      <value n="j2eeWebAppName" v="SoaringTheWorld-RestService"/>
+      <value n="j2eeWebContextRoot" v="SoaringTheWorldAtRestService"/>
    </hash>
    <hash n="oracle.jdevimpl.config.JProjectLibraries">
       <list n="exportedReferences">
@@ -189,5 +189,11 @@
    </hash>
    <hash n="oracle.jdevimpl.config.JProjectPaths">
       <url n="outputDirectory" path="classes/"/>
+   </hash>
+   <hash n="oracle.toplink.workbench.addin">
+      <hash n="persistence-list">
+         <value n="jpa-version" v="2.0"/>
+         <value n="metamodel-generation-directory" v=""/>
+      </hash>
    </hash>
 </jpr:project>

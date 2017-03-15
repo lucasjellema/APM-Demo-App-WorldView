@@ -23,7 +23,7 @@ import com.sun.jersey.api.uri.UriTemplate;
 import generated.Feed;
 
 @Generated(value = {
-           "wadl|http://141.144.34.222/TheWorldAtRestService/resources/application.wadl",
+           "wadl|http://141.144.34.222/SoaringTheWorldAtRestService/resources/application.wadl",
            "run|c30b1bd4-85bc-4ed1-9959-7b00936d1dc1" }, comments = "wadl2java, http://wadl.java.net",
            date = "2017-01-20T09:07:38.420+01:00")
 public class TheWorldAtRestServiceResources {

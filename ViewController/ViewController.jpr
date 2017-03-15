@@ -181,8 +181,8 @@
       </list>
    </hash>
    <hash n="oracle.jdeveloper.model.J2eeSettings">
-      <value n="j2eeWebAppName" v="TheWorldView"/>
-      <value n="j2eeWebContextRoot" v="TheWorldView"/>
+      <value n="j2eeWebAppName" v="SoaringProposalManager-webapp"/>
+      <value n="j2eeWebContextRoot" v="SoaringProposalManager"/>
    </hash>
    <hash n="oracle.jdeveloper.model.PathsConfiguration">
       <hash n="javaContentSet">
@@ -621,5 +621,11 @@
             <value n="version" v="1.1"/>
          </hash>
       </list>
+   </hash>
+   <hash n="oracle.toplink.workbench.addin">
+      <hash n="persistence-list">
+         <value n="jpa-version" v="2.0"/>
+         <value n="metamodel-generation-directory" v=""/>
+      </hash>
    </hash>
 </jpr:project>

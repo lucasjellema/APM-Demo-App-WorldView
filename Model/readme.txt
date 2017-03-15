@@ -59,4 +59,6 @@ Used countries data from https://www.worlddata.info/downloads/
 
 
 Crucial pointer for deploying ADF BC and hooking up to JDBC Data Source: https://go2kavinkumar.wordpress.com/tag/jndi-lookup/ 
-conclusionL: connections.xml has to contain a connection entry with the same name as the 
+conclusion: 
+* connections.xml has to contain a connection entry with the same name as the data source (Without the jdbc and the DS)
+* ADF expects the data source JNDI name to start with jdbc/ and end with DS 

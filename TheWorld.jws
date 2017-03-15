@@ -50,8 +50,8 @@
                   </hash>
                </list>
             </hash>
-            <url n="earURL" path="deploy/TheWorld_Project1_TheWorld.ear"/>
-            <value n="enterpriseAppName" v="TheWorld_Project1_TheWorld"/>
+            <url n="earURL" path="deploy/SoaringProposalManager_TheWorld.ear"/>
+            <value n="enterpriseAppName" v="SoaringProposalManager_TheWorld"/>
             <hash n="fileGroups">
                <list n="groups">
                   <hash>

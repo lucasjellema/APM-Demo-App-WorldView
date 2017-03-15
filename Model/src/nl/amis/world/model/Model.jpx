@@ -10,8 +10,9 @@
   <DesignTime>
     <Attr Name="_jprName" Value="../../../../../Model.jpr"/>
     <Attr Name="_jbo.TypeMapEntries" Value="OracleApps"/>
-    <Attr Name="_NamedConnection" Value="AMISPAAS_DB_WORLD"/>
+    <Attr Name="_NamedConnection" Value="cloudace"/>
     <Attr Name="_appModuleNames0" Value="nl.amis.world.model.WorldModule"/>
+    <Attr Name="_appModuleNames1" Value="nl.amis.world.model.SoaringProposalService"/>
   </DesignTime>
   <Containee
     Name="model"
@@ -21,6 +22,7 @@
       <Attr Name="_EO" Value="true"/>
       <Attr Name="_VO" Value="true"/>
       <Attr Name="_AM" Value="true"/>
+      <Attr Name="_VL" Value="true"/>
     </DesignTime>
   </Containee>
 </JboProject>
